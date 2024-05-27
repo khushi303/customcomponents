@@ -1,6 +1,7 @@
 function showSiderBar() {
     document.querySelector('#sidebar').classList.toggle('open')
-    document.querySelector('#layerblur').classList.add('layerblur')
+    document.querySelector('#layerblur').classList.toggle('left-0')
+    document.querySelector('#layerblur').classList.toggle('backdrop-blur-md')
 }
 
 let submitForm = document.getElementById('ValidationForm');
