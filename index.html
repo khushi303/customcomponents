@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .open {
+          left: 0;
+        };
+        .layerblur{
+          display: block !important;
+        }
+      }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {},
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-violet-100 relative">
+    <div id="sidebar" class="fixed top-0 bottom-0 left-[-400px] w-[400px] min-h-screen bg-white z-[99]"></div>
+    <div class="container max-w-[1164px] mx-auto px-3">
+        <div class="flex justify-between items center py-4">
+            <div onclick="showSiderBar()" class="w-[28px] h-[22px] flex flex-col justify-between z-[40]">
+                <div class="bg-black h-1 w-full rounded-sm"></div>
+                <div class="bg-black h-1 w-full rounded-sm"></div>
+                <div class="bg-black h-1 w-full rounded-sm"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container max-w-[1164px] mx-auto px-3">
+        <div class="responsive">
+            <div class="px-3">
+                <img src="/assets/images/png/SliderImg1.webp" alt="SliderImg1" class="w-full" />
+            </div>
+            <div class="px-3">
+                <img src="/assets/images/png/SliderImg1.webp" alt="SliderImg1" class="w-full" />
+            </div>
+            <div class="px-3">
+                <img src="/assets/images/png/SliderImg1.webp" alt="SliderImg1" class="w-full" />
+            </div>
+            <div class="px-3">
+                <img src="/assets/images/png/SliderImg1.webp" alt="SliderImg1" class="w-full" />
+            </div>
+            <div class="px-3">
+                <img src="/assets/images/png/SliderImg1.webp" alt="SliderImg1" class="w-full" />
+            </div>
+            <div class="px-3">
+                <img src="/assets/images/png/SliderImg1.webp" alt="SliderImg1" class="w-full" />
+            </div>
+            <div class="px-3">
+                <img src="/assets/images/png/SliderImg1.webp" alt="SliderImg1" class="w-full" />
+            </div>
+        </div>
+        <form id="ValidationForm" class="mt-10">
+            <div class="flex flex-col">
+                <label for="name">Name <span>*</span></label>
+                <input id="name" placeholder="Enter your name" type="text" class="p-2 text-lg font-">
+                <span class="errorMsg"></span>
+            </div>
+            <div class="flex flex-col pt-4">
+                <label for="number">Phone no. <span>*</span></label>
+                <input id="number" placeholder="Enter your phone number" type="tel">
+                <span class="errorMsg"></span>
+            </div>
+            <div class="flex flex-col pt-4">
+                <label for="mail">Email <span>*</span></label>
+                <input id="mail" placeholder="Enter your email address" type="email">
+                <span class="errorMsg"></span>
+            </div>
+            <div class="flex flex-col pt-4">
+                <label for="password">Password <span>*</span></label>
+                <input id="password" placeholder="Enter your password" type="password">
+                <span class="errorMsg"></span>
+            </div>
+            <div class="flex flex-col pt-4">
+                <label for="confirmPassword">Confirm Password <span>*</span></label>
+                <input id="confirmPassword" placeholder="Confirm your password" type="password">
+                <span class="errorMsg"></span>
+            </div>
+            <button type="submit"
+                class="flex bg-[#152DFF] hover:bg-[#150DEE] py-2 w-[300px] justify-center mt-10 text-white mx-auto rounded-full">Submit</button>
+        </form>
+    </div>
+    <div id="layerblur" onclick="showSiderBar()"
+        class="fixed backdrop-blur-md top-0 left-0 right-0 bottom-0 w-full min-h-screen hidden">
+    </div>
+    <script src="/assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".responsive").slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true,
+                    },
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ],
+        });
+    </script>
+</body>
+
+</html>

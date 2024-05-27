@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+body {
+    font-family: 'Protest Riot', sans-serif !important;
+}
