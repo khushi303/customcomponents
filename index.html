@@ -38,74 +38,25 @@
     <div id="sidebar" class="fixed top-0 bottom-0 left-[-400px] w-[400px] min-h-screen bg-white z-[99]"></div>
     <div class="container max-w-[1164px] mx-auto px-3">
         <div class="flex justify-between items-center py-4">
-            <div onclick="showSiderBar()" class="w-[28px] h-[22px] flex flex-col justify-between z-[40]">
+            <div onclick="showSiderBar()" class="w-[28px] h-[22px] flex flex-col justify-between z-10">
                 <div class="bg-black h-1 w-full rounded-sm"></div>
                 <div class="bg-black h-1 w-full rounded-sm"></div>
                 <div class="bg-black h-1 w-full rounded-sm"></div>
             </div>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href="./SliderPage.html"></a></li>
+            <ul class="flex items-center gap-5">
+                <li><a href="/">Home</a></li>
+                <li><a href="./SliderPage.html">Slider</a></li>
+                <li><a href="./FormPage.html">Forms</a></li>
+                <li><a href="./AccordionPage.html">Accordian</a></li>
             </ul>
         </div>
     </div>
 
     <div class="container max-w-[1164px] mx-auto px-3">
-        <div class="responsive">
-            <div class="px-3">
-                <img src="/assets/images/webp/mike.webp" alt="mike" class="w-full" />
-            </div>
-            <div class="px-3">
-                <img src="/assets/images/webp/piano.webp" alt="piano" class="w-full" />
-            </div>
-            <div class="px-3">
-                <img src="/assets/images/webp/radio.webp" alt="radio" class="w-full" />
-            </div>
-            <div class="px-3">
-                <img src="/assets/images/webp/pianoplaying.webp" alt="pianoplaying" class="w-full" />
-            </div>
-            <div class="px-3">
-                <img src="/assets/images/webp/soundtrack.webp" alt="soundtrack" class="w-full" />
-            </div>
-            <div class="px-3">
-                <img src="/assets/images/webp/studio.webp" alt="studio" class="w-full" />
-            </div>
-            <div class="px-3">
-                <img src="/assets/images/webp/track.webp" alt="track" class="w-full" />
-            </div>
-        </div>
-        <form id="ValidationForm" class="mt-10">
-            <div class="flex flex-col">
-                <label for="name">Name <span>*</span></label>
-                <input id="name" placeholder="Enter your name" type="text" class="p-2 text-lg font-">
-                <span class="errorMsg"></span>
-            </div>
-            <div class="flex flex-col pt-4">
-                <label for="number">Phone no. <span>*</span></label>
-                <input id="number" placeholder="Enter your phone number" type="tel">
-                <span class="errorMsg"></span>
-            </div>
-            <div class="flex flex-col pt-4">
-                <label for="mail">Email <span>*</span></label>
-                <input id="mail" placeholder="Enter your email address" type="email">
-                <span class="errorMsg"></span>
-            </div>
-            <div class="flex flex-col pt-4">
-                <label for="password">Password <span>*</span></label>
-                <input id="password" placeholder="Enter your password" type="password">
-                <span class="errorMsg"></span>
-            </div>
-            <div class="flex flex-col pt-4">
-                <label for="confirmPassword">Confirm Password <span>*</span></label>
-                <input id="confirmPassword" placeholder="Confirm your password" type="password">
-                <span class="errorMsg"></span>
-            </div>
-            <button type="submit"
-                class="flex bg-[#152DFF] hover:bg-[#150DEE] py-2 w-[300px] justify-center mt-10 text-white mx-auto rounded-full">Submit</button>
-        </form>
+     
     </div>
     <div onclick="showSiderBar()" id="layerblur" 
-        class="fixed  top-0 left-0 right-0 bottom-0 w-full min-h-screen ">
+        class="fixed  top-0 left-[-100%] bottom-0 w-full min-h-screen ">
     </div>
     <script src="/assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"

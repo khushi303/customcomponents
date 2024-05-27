@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .open {
+          left: 0;
+        };
+        .layerblur{
+          display: block !important;
+        }
+      }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {},
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-violet-100 relative">
+    <div id="sidebar" class="fixed top-0 bottom-0 left-[-400px] w-[400px] min-h-screen bg-white z-[99]"></div>
+    <div class="container max-w-[1164px] mx-auto px-3">
+        <div class="flex justify-between items-center py-4">
+            <div onclick="showSiderBar()" class="w-[28px] h-[22px] flex flex-col justify-between z-10">
+                <div class="bg-black h-1 w-full rounded-sm"></div>
+                <div class="bg-black h-1 w-full rounded-sm"></div>
+                <div class="bg-black h-1 w-full rounded-sm"></div>
+            </div>
+        <ul class="flex items-center gap-5">
+            <li><a href="/">Home</a></li>
+            <li><a href="./SliderPage.html">Slider</a></li>
+            <li><a href="./FormPage.html">Forms</a></li>
+            <li><a href="./AccordionPage.html">Accordian</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="container max-w-[1164px] mx-auto px-3">
+
+    </div>
+    <div onclick="showSiderBar()" id="layerblur" class="fixed  top-0 left-[-100%] bottom-0 w-full min-h-screen ">
+    </div>
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
